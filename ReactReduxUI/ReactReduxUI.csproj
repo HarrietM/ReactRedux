@@ -72,6 +72,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="libs\react\react-dom.js" />
+    <Content Include="libs\react\react-router.js" />
+    <Content Include="libs\react\react.js" />
+    <Content Include="libs\redux\react-redux.js" />
+    <Content Include="libs\redux\redux-thunk.js" />
+    <Content Include="libs\redux\redux.js" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -94,7 +100,15 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="src\" />
+    <Folder Include="src\actions\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\containers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="libs\redux\react-redux.d.ts" />
+    <TypeScriptCompile Include="libs\redux\redux.d.ts" />
+    <TypeScriptCompile Include="src\reducers\index.ts" />
+    <TypeScriptCompile Include="src\store.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
